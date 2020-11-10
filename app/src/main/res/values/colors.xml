@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?><!--<resources>-->
+<!--    <color name="colorPrimary">#205072</color>-->
+<!--    <color name="colorPrimaryDark">#205072</color>-->
+<!--    <color name="colorPrimaryLight">#205072</color>-->
+
+<!--    <color name="colorAccent">#00E685</color>-->
+<!--    <color name="secondaryDark">#179468</color>-->
+<!--    <color name="colorSecondaryLight">#D572EAB7</color>-->
+
+
+<!--&lt;!&ndash;    &ndash;&gt;-->
+<!--&lt;!&ndash;    &ndash;&gt;-->
+<!--&lt;!&ndash;    <color name="colorAccent">#56c596</color>&ndash;&gt;-->
+<!--&lt;!&ndash;    <color name="secondaryDark">#179468</color>&ndash;&gt;-->
+
+
+<!--    <color name="textColorPrimary">#ffffff</color>-->
+<!--    <color name="textColorSecondary">#002846</color>-->
+
+<!--    <color name="navigationBar">#002846</color>-->
+
+<!--    <color name="InactiveBottomNavIconColor">#99FAFAFA</color>-->
+
+<!--    <color name="windowBackground">#E4E4E4</color>-->
+
+<!--    <color name="colorDeaths">#FF073A</color>-->
+<!--    <color name="colorDeathsLight">#FB3C63</color>-->
+
+<!--    <color name="colorRecovered">#00E685</color>-->
+
+<!--</resources>-->
+
+
+<resources>
+    <color name="colorPrimary">#304088</color>
+    <color name="colorPrimaryDark">#304088</color>
+    <color name="colorPrimaryLight">#61001A5A</color>
+
+    <color name="colorAccent">#4398ee</color>
+    <color name="secondaryDark">#4398ee</color>
+    <color name="colorSecondaryLight">#4398ee</color>
+
+
+    <color name="textColorPrimary">#ffffff</color>
+    <color name="textColorSecondary">#304088</color>
+    <color name="textColorSecondaryLight">#4D5787</color>
+
+    <color name="navigationBar">#304088</color>
+
+
+<!--    <color name="colorDeaths">#FF073A</color>-->
+    <color name="colorConfirmed">#4398ee</color>
+    <color name="colorDeathsLight">#FB3C63</color>
+    <color name="colorRecovered">#00E676</color>
+
+    <color name="InactiveBottomNavIconColor">#99FAFAFA</color>
+    <color name="windowBackground">#E4E4E4</color>
+</resources>

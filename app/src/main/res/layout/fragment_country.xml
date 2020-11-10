@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CountryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_country"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            >
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/title_country"
+                android:textColor="@color/textColorPrimary" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_ccp"
+            app:ccp_arrowColor="@color/colorPrimary"
+            app:ccp_contentColor="@color/colorPrimary"
+            android:padding="4dp"
+            app:ccp_defaultNameCode="US"
+            app:ccp_showFullName="true"
+            app:ccp_showNameCode="false"
+            app:ccp_showPhoneCode="false"
+            tools:ignore="MissingClass" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <!--   WorldWide Stats Container         -->
+
+                <!--   WorldWide Stats Container         -->
+                <LinearLayout
+                    android:id="@+id/globalStats"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <!--      Total Cases Container -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_card_row"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="4dp"
+                        android:elevation="4dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/total_confirmed"
+                            android:textColor="@color/colorConfirmed"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:background="@drawable/rounded_confirmed_card"
+                            />
+
+                        <TextView
+                            android:id="@+id/ctextView_WorldWide_TotalConfirmed"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.4"
+                            android:gravity="center"
+                            android:textColor="@color/colorConfirmed"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/ctextView_WorldWide_NewConfirmed"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.3"
+                            android:gravity="center"
+                            android:textColor="@color/colorConfirmed"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            />
+
+                    </LinearLayout>
+                    <!--     Recovered Cases Container       -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_card_row"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="4dp"
+                        android:elevation="4dp"
+
+                        >
+
+                        <TextView
+                            android:text="@string/totalrecovered"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:textColor="@color/colorRecovered"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:background="@drawable/rounded_recovered_card"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/ctextView_WorldWide_TotalRecovered"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.4"
+                            android:gravity="center"
+                            android:textColor="@color/colorRecovered"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/ctextView_WorldWide_NewRecovered"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.3"
+                            android:gravity="center"
+                            android:textColor="@color/colorRecovered"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+                    <!--     New Cases Container       -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_card_row"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="4dp"
+                        android:elevation="4dp"
+                        >
+
+                        <TextView
+                            android:text="@string/totaldeaths"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:textColor="@color/colorDeathsLight"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:background="@drawable/rounded_death_card"
+                            />
+
+                        <TextView
+                            android:id="@+id/ctextView_WorldWide_TotalDeaths"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.4"
+                            android:gravity="center"
+                            android:textColor="@color/colorDeathsLight"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/ctextView_WorldWide_NewDeaths"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.3"
+                            android:gravity="center"
+                            android:textColor="@color/colorDeathsLight"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                <!--    CardView Header -->
+
+                <LinearLayout
+                    android:id="@+id/countriesList"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/special_rounded_card_row"
+                    android:padding="8dp">
+
+                    <!--        Country Name    -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:gravity="center_vertical"
+                        android:text="@string/region"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <!--            Confirmed       -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:text="Confirmed"
+                            android:textColor="@color/textColorPrimary"
+
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--            Recovered       -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Recovered"
+                            android:textColor="@color/textColorPrimary"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!--            Deaths -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Deaths"
+                            android:textColor="@color/textColorPrimary"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!--    CardView Container   -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_region_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="56dp"
+                    />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+
+    <!--        &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+    <!--        <androidx.recyclerview.widget.RecyclerView-->
+    <!--            android:id="@+id/rv_country_container"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_below="@+id/countriesList"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginTop="16dp"-->
+
+    <!--            />-->
+
+    <!--    </RelativeLayout>-->
+
+
+</FrameLayout>

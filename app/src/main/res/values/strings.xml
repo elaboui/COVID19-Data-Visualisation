@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">COVID19 Data Visualisation</string>
+    <string name="title_home">WorldWide </string>
+    <string name="title_country">Country</string>
+    <string name="title_news">News</string>
+    <string name="title_advice">Advice</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="lastUpdate">Last update</string>
+    <string name="totaldeaths">Total Deaths</string>
+    <string name="totalrecovered">Total Recovered</string>
+    <string name="total_confirmed">Total Confirmed</string>
+    <string name="new_decorator">+</string>
+    <string name="title_activity_world_wide_chart">WordWide Chart </string>
+
+    <string name="action_settings">Settings</string>
+    <string name="advice1_desc">Stay at home</string>
+    <string name="advice2_desc">Avoid close contact</string>
+    <string name="advice3_desc">Clean your hands often</string>
+    <string name="advice4_desc">Wear a facemask</string>
+    <string name="advice5_desc">Cover coughts and sneezes</string>
+    <string name="advice6_desc">clean and disinfect</string>
+    <string name="stats">Stats</string>
+    <string name="region">Region</string>
+    <string name="about">About</string>
+</resources>
